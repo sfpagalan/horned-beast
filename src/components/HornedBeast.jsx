@@ -3,13 +3,11 @@ import React from 'react';
 import Card from 'react-bootstrap/Card';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faHeart} from '@fortawesome/free-regular-svg-icons';
-// import hornedBeastData from '../assets/data.json';
-
 
 
 class HornedBeast extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       favorites: 0,
     };
@@ -22,26 +20,29 @@ class HornedBeast extends React.Component {
   };
 
   render() {
+    const { beast, openModal } = this.props;
     return (
       <Card>
         <Card.Img
           className='horned-beast'
           variant='top'
-          src={this.props.image_url}
+          src={beast.image_url}
+          onClick={() => openModal(beast)}
         />
         <Card.Body>
-          <Card.Title>{this.props.title}</Card.Title>
-          <Card.Text>{this.props.description}</Card.Text>
-          <Card.Text>Horns: {this.props.horns}</Card.Text>
+          <Card.Title>{beast.title}</Card.Title>
+          <Card.Text>{beast.description}</Card.Text>
+          <Card.Text className='horns'>Horns: {beast.horns}</Card.Text>
           <div className='icon-container'>
+            {/* <Button variant="primary" onClick={this.increaseFavorites}> */}
             <FontAwesomeIcon
-              icon={faHeart}
-              alt="Favorite"
-              title="Favorite"
-              className="heart-icon"
-              onClick={this.increaseFavorites}
-            />
-          <span className='favorite-count'>{this.state.favorites}</span>
+                icon={faHeart}
+                alt="Favorite"
+                title="Favorite"
+                className="heart-icon"
+                onClick={this.increaseFavorites}
+                />
+            {this.state.favorites}
           </div>
         </Card.Body>
       </Card>
