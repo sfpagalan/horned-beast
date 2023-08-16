@@ -1,8 +1,10 @@
 #root {
-  max-width: 1280px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  color: #e3d0e0;
+  background-color: #404565;
 }
 
 .logo {
@@ -33,16 +35,49 @@
   }
 }
 
-.card {
-  min-width: 250px;
-  max-width: 300px;
+hr {
+  color: #8590c0;
+}
+
+h1 {
+  font-family: 'Mr Bedfort';
+}
+
+h2#description {
+  font-family: 'Germania One', cursive;
+  font-size: 18px;
+  margin-top: 0;
+}
+
+div.card {
+  background-color: #e3d0e0;
+  min-width: 200px;
+  max-width: 250px;
   max-height: 500px;
   margin: 10px;
   display: flex;
   justify-content: center;
-  text-align: center;
-  align-items: center;
-  align-self: center;
+}
+
+div.card-title.h5 {
+  color: #616691;
+  font-family: 'Germania One', cursive;
+  font-size: 30px;
+}
+
+div.card-body {
+  padding-top: 0;
+}
+
+.card-text {
+  color: #616691;
+  font-family: 'Lumanosimo';
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+.horns {
+  margin: 5px
 }
 
 .gallery {
@@ -51,37 +86,120 @@
   justify-content: center;
 }
 
+.search-fuzzies {
+
+}
+
 .horned-beast {
-  width: 300px;
   height: 200px;
   padding: 10px;
+  background-color: #e3d0e0;
 }
 
-
-.read-the-docs {
-  color: #888;
+.modal-dialog-centered {
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
+.modal-content {
+  text-align: center;
+  align-self: center;
+  max-width: 340px;
+  max-height: 600px;
+}
+
+.modal-image {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+div.modal-header {
+  padding-bottom: 0;
+}
+
+.modal-title.h4 {
+  color: #616691;
+  font-family: 'Germania One', cursive;
+  font-size: 30px;
+  margin-bottom: 0;
+}
+
+.modal-text {
+  color: #616691;
+  font-family: 'Lumanosimo';
+  margin-top: 10px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.btn.btn-secondary {
+  background-color: #404565;
+  color: #e3d0e0;
+  border: none;
+  flex-wrap: wrap;
+}
+
+.btn.btn-secondary:hover {
+  color: #FF8CB2;
+  background-color: #e3d0e0;
+}
+
+.card-body {
+  background-color: #e3d0e0;
+}
 
 .icon-container {
-  justify-content: center;
-  display: flex;
+  position: relative;
 }
 
 .heart-icon {
   font-size: 25px;
   cursor: pointer;
   margin-right: 5px;
-  transition: color 0.2s;
-}
-
-.favorite-count {
- padding-left: 5px;
-
+  /* transition: color 0.2s; */
+  /* transition: 0.9s; */
 }
 
 .heart-icon:hover {
-  color: red;
+  animation: runAwayAnimation 2s ease;
+  color: #FF8CB2;
 }
 
+@keyframes runAwayAnimation {
+  0% {
+    transform: translateX(0);
+    color: #FF8CB2;
+  }
+  25% {
+    transform: translatex(100px);
+    color: #FF8CB2;
+  }
+  /* 50% {
+    transform: translateX(-40px);
+    color: #FF8CB2;
+  } */
+  75% {
+    transform: rotate(180deg);
+    color: #FF8CB2;
+  }
+  100% {
+    transform: translateX(-120px);
+    color: #FF8CB2;
+  }
+}
 
+.btn.btn-primary:hover {
+  color: #FF8CB2;
+  background-color: #e3d0e0;
+}
+
+.btn.btn-primary {
+  color: #404565;
+  background-color: #e3d0e0;
+  border: none;
+  /* margin-left: 80px; */
+  /* justify-content: center;
+  display: flex; */
+  flex-wrap: wrap;
+}
