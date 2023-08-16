@@ -22,11 +22,12 @@ class HornedBeast extends React.Component {
   render() {
     const { beast, openModal } = this.props;
     return (
-      <Card onClick={() => openModal(beast)}>
+      <Card>
         <Card.Img
           className='horned-beast'
           variant='top'
           src={beast.image_url}
+          onClick={() => openModal(beast)}
         />
         <Card.Body>
           <Card.Title>{beast.title}</Card.Title>
