@@ -58,3 +58,24 @@ p {
   margin-top: 0;
   max-width: 500px;
 }
+
+.icon-container {
+  justify-content: center;
+  display: flex;
+}
+
+.heart-icon {
+  font-size: 25px;
+  cursor: pointer;
+  margin-right: 5px;
+  transition: color 0.2s;
+}
+
+.favorite-count {
+ padding-left: 5px;
+
+}
+
+.heart-icon:hover {
+  color: red;
+}
