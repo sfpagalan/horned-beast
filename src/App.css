@@ -34,27 +34,54 @@
 }
 
 .card {
-  padding: 2em;
+  min-width: 250px;
+  max-width: 300px;
+  max-height: 500px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  align-self: center;
 }
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.horned-beast {
+  width: 300px;
+  height: 200px;
+  padding: 10px;
+}
+
 
 .read-the-docs {
   color: #888;
 }
 
-img {
-  width: 300px;
-  height: 300px;
+
+.icon-container {
+  justify-content: center;
+  display: flex;
 }
 
-#description {
-  margin-bottom: 30px;
+.heart-icon {
+  font-size: 25px;
+  cursor: pointer;
+  margin-right: 5px;
+  transition: color 0.2s;
 }
 
-h2 {
-  margin-bottom: 0;
+.favorite-count {
+ padding-left: 5px;
+
 }
 
-p {
-  margin-top: 0;
-  max-width: 500px;
+.heart-icon:hover {
+  color: red;
 }
+
+

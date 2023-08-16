@@ -49,3 +49,38 @@ Any environment configuration steps.
 ## Collaborators
 
 List collaborators here.
+
+
+## Time Estimate
+
+Number and name of feature: Feature #1: Display Images
+
+Estimate of time needed to complete: 1 hr
+
+Start time: 1430
+
+Finish time: 1530
+
+Actual time needed to complete: 2359
+
+<br>
+Number and name of feature: Feature #2: Allow Users to Favorite Individual Beasts
+
+Estimate of time needed to complete: 1 hr
+
+Start time: 1500
+
+Finish time: 1630
+
+Actual time needed to complete: 2359
+
+<br>
+Number and name of feature: Feature 3: Bootstrap
+
+Estimate of time needed to complete: 1 hr
+
+Start time: 1800
+
+Finish time: 2030
+
+Actual time needed to complete: 2359
