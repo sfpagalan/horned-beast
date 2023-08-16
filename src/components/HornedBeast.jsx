@@ -24,7 +24,11 @@ class HornedBeast extends React.Component {
   render() {
     return (
       <Card>
-        <Card.Img className='horned-beast' variant='top' src={this.props.image_url}/>
+        <Card.Img
+          className='horned-beast'
+          variant='top'
+          src={this.props.image_url}
+        />
         <Card.Body>
           <Card.Title>{this.props.title}</Card.Title>
           <Card.Text>{this.props.description}</Card.Text>
