@@ -31,6 +31,12 @@ h2#description {
   margin-top: 0;
 }
 
+.quote {
+  font-family: 'Passions Conflict', cursive;
+  font-size: 28px;
+  line-height: 20px;
+}
+
 div.card {
   background-color: #e3d0e0;
   min-width: 200px;
