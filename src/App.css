@@ -95,6 +95,29 @@ input.searchBar {
   margin-bottom: 5px;
 }
 
+div.horn-filter {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 5px;
+  font-family: 'Germania One', cursive;
+}
+
+.horn {
+  margin-right: 5px;
+  margin-bottom: 5px;
+  line-height: 25px;
+}
+
+select.horn-select {
+  font-family: 'Lumanosimo';
+  font-size: 10px;
+  text-align: center;
+  margin-bottom: 5px;
+  height: 25px;
+  cursor: pointer;
+}
+
 .horned-beast {
   height: 200px;
   padding: 10px;
