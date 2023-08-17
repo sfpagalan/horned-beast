@@ -15,8 +15,8 @@ class Header extends React.Component {
                 value={this.props.searchQuery}
                 onChange={this.props.onSearchChange}
                 />
-
                 </div>
+                <p className="quote">When you want to click on your favorite Beast always remember that "Good things come to those who wait".</p>
             </section>
         );
     }
