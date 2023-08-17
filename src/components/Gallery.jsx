@@ -8,7 +8,7 @@ class Gallery extends React.Component {
     super(props);
     this.state = {
       showModal: false, //property to track whether i want to show the modal or not
-      selectedBeast: (''), //null. putting this here to remember. this property should have my dad tats why it's null.
+      selectedBeast: (''), //null. putting this here to remember. this property should have my data thats why it's null.
     };
   }
 
@@ -27,10 +27,14 @@ class Gallery extends React.Component {
   };
 
   render() { //searchBeast is to filter my fuzzies using the searchQuery i got prom props in App.jsx
-    const searchBeasts = hornedBeastData.filter(beast => {
+    const searchBeasts = hornedBeastData.filter((beast) => {
       const regex = new RegExp(this.props.searchQuery, 'i');
-      return regex.test(beast.title) || regex.test(beast.description);
+      return (
+        (regex.test(beast.title) || regex.test(beast.description)) &&
+        (!this.props.filterByHorns || beast.horns === parseInt(this.props.filterByHorns))
+      );
     });
+
     return (
         <div className='gallery'>
           {searchBeasts.map((beast) => ( //change the hornedBeastData to searchBeasts.map to enable the search fuzzies
